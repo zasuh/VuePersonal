@@ -3,6 +3,9 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Vuetify, { theme: {
   primary: '#ee44aa',
@@ -16,7 +19,7 @@ Vue.use(Vuetify, { theme: {
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+/* eslint-disable */
 new Vue({
   el: '#app',
   router,
