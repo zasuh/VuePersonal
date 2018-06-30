@@ -8,8 +8,6 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const routes = []
-
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Vuetify, { theme: {
