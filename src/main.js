@@ -4,6 +4,11 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+const routes = []
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
@@ -24,4 +29,4 @@ new Vue({
   el: '#app',
   router,
   render: h => h(App)
-})
+}).$mount('#app')
