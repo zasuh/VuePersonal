@@ -21,5 +21,20 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
+    <v-jumbotron style="height:100%">
+      <v-container fill-height>
+        <v-layout align-center>
+          <v-flex xs12 md6 offset-3>
+            <h3 class="display-2">suhadolnik@protonmail.com</h3>
+            <v-divider class="my-3"></v-divider>
+            <h3 class="display-2">github.com/zasuh</h3>
+            <v-divider class="my-3"></v-divider>
+            <h3 class="display-2">twitter.com/zasuh_</h3>
+            <v-divider class="my-3"></v-divider>
+            <h3 class="display-2">linkedin.com/in/zasuhadolnik/</h3>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-jumbotron>
   </v-app>
 </template>

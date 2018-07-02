@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
-import Resume from '@/components/Resume'
 import Technologies from '@/components/Technologies'
 import Home from '@/components/Home'
 
@@ -24,11 +23,6 @@ export default new Router({
       path: '/Contact',
       name: 'Contact',
       component: Contact
-    },
-    {
-      path: '/Resume',
-      name: 'Resume',
-      component: Resume
     },
     {
       path: '/Technologies',

@@ -22,9 +22,36 @@
       </v-toolbar-items>
     </v-toolbar>
     <v-container>
-      <v-layout>
+      <v-layout align-center>
         <v-flex xs12 sm6 offset-sm3>
           <h3 class="display-3 pb-3">{{Projects}}</h3>
+          <v-divider class="my-3"></v-divider>
+          <v-card>
+            <v-card-title primary-title>
+              <div>
+                <h3 class="headline mb-1 display-3">Material Resume Clone</h3>
+                <div>One of the first material design clones I've made using HTML & CSS.</div>
+              </div>
+            </v-card-title>
+            <v-card-actions>
+              <v-btn flat color="orange">GitHub Repo</v-btn>
+              <v-btn flat color="orange">Live Demo</v-btn>
+            </v-card-actions>
+          </v-card>
+          <v-divider class="my-3"></v-divider>
+          <v-card>
+            <v-card-title primary-title>
+              <div>
+                <h3 class="headline mb-1 display-3">Studio Ghibli API</h3>
+                <div>Experimentation with the Studio Ghibli movie API.</div>
+              </div>
+            </v-card-title>
+            <v-card-actions>
+              <v-btn flat color="orange">GitHub Repo</v-btn>
+              <v-btn flat color="orange">Live Demo</v-btn>
+            </v-card-actions>
+          </v-card>
+          <v-divider class="my-3"></v-divider>
           <v-card>
             <v-card-title primary-title>
               <div>

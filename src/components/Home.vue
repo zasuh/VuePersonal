@@ -16,7 +16,7 @@
         <v-btn flat router to="/Contact">
           <v-icon class="pr-2">perm_contact_calendar</v-icon>Contact
         </v-btn>
-        <v-btn flat router to="/Resume">
+        <v-btn flat>
           <v-icon class="pr-2">description</v-icon>Resume
         </v-btn>
       </v-toolbar-items>
