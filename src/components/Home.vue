@@ -1,6 +1,6 @@
 <template>
-  <v-app dark class="red">
-    <v-toolbar app fixed>
+  <v-app dark>
+    <v-toolbar app fixed class="light-blue darken-4">
       <v-toolbar-title>ŽANE SUHADOLNIK</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
@@ -24,7 +24,8 @@
     <v-jumbotron
       :gradient="gradient"
       dark
-      src="https://s3.amazonaws.com/vuetify-docs/images/parallax/material2.jpg">>
+      src="https://s3.amazonaws.com/vuetify-docs/images/parallax/material2.jpg"
+      style="height:100%">
       <v-container fill-height>
         <v-layout align-center>
           <v-flex text-xs-center>

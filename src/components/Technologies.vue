@@ -1,6 +1,6 @@
 <template>
-  <v-app dark class="red">
-    <v-toolbar app fixed>
+  <v-app dark>
+    <v-toolbar app fixed class="light-blue darken-4">
       <v-toolbar-title>ŽANE SUHADOLNIK</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
