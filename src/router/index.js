@@ -35,5 +35,6 @@ export default new Router({
       name: 'Technologies',
       component: Technologies
     }
-  ]
+  ],
+  mode: 'history'
 })

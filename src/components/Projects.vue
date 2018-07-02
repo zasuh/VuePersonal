@@ -1,28 +1,23 @@
 <template>
-  <div class="projects">
+  <v-app dark class="red">
     <v-toolbar app fixed>
       <v-toolbar-title>ŽANE SUHADOLNIK</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn flat>
-          <v-icon class="pr-2">home</v-icon>
-          <router-link class="nav-link" to="/Home">Home</router-link>
+        <v-btn flat router to="/">
+          <v-icon class="pr-2">home</v-icon>Home
         </v-btn>
-        <v-btn flat>
-          <v-icon class="pr-2" to="\components\Projects">build</v-icon>
-          <router-link class="nav-link" to="/Projects">Projects</router-link>
+        <v-btn flat router to="/Projects">
+          <v-icon class="pr-2">build</v-icon>Projects
         </v-btn>
-        <v-btn flat>
-          <v-icon class="pr-2">code</v-icon>
-          <router-link class="nav-link" to="/Technologies">Technologies</router-link>
+        <v-btn flat router to="/Technologies">
+          <v-icon class="pr-2">code</v-icon>Technologies
         </v-btn>
-        <v-btn flat>
-          <v-icon class="pr-2">perm_contact_calendar</v-icon>
-          <router-link class="nav-link" to="/Contact">Contact</router-link>
+        <v-btn flat router to="/Contact">
+          <v-icon class="pr-2">perm_contact_calendar</v-icon>Contact
         </v-btn>
-        <v-btn flat>
-          <v-icon class="pr-2">description</v-icon>
-          <router-link class="nav-link" to="/Resume">Resume</router-link>
+        <v-btn flat router to="/Resume">
+          <v-icon class="pr-2">description</v-icon>Resume
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -58,7 +53,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </v-app>
 </template>
 
 <script>
