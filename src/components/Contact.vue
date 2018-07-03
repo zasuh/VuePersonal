@@ -23,18 +23,31 @@
     </v-toolbar>
     <v-jumbotron style="height:100%">
       <v-container fill-height>
-        <v-layout align-center>
+        <v-layout align-center justify-center>
           <v-flex xs12 md6 offset-3>
-            <h3 class="display-2">suhadolnik@protonmail.com</h3>
+            <h3 class="display-2">
+              <v-icon class="pr-2">fas fa-envelope</v-icon> suhadolnik@protonmail.com
+            </h3>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-2">github.com/zasuh</h3>
+            <h3 class="display-2">
+              <v-icon class="pr-2">fas fa-github</v-icon>github.com/zasuh
+            </h3>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-2">twitter.com/zasuh_</h3>
+            <h3 class="display-2">
+              <v-icon class="pr-2">fas fa-twitter</v-icon> twitter.com/zasuh_
+            </h3>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-2">linkedin.com/in/zasuhadolnik/</h3>
+            <h3 class="display-2">
+              <v-icon class="pr-2">fas fa-linkedin</v-icon> linkedin.com/in/zasuhadolnik/
+            </h3>
           </v-flex>
         </v-layout>
       </v-container>
     </v-jumbotron>
   </v-app>
 </template>
+
+<style scoped>
+
+</style>
+

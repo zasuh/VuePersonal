@@ -21,11 +21,9 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-container>
-      <v-layout align-center>
-        <v-flex xs12 sm6 offset-sm3>
+      <v-layout>
+        <v-flex xs12 md6 offset-sm3>
           <h3 class="display-3 pb-3">{{Projects}}</h3>
-          <v-divider class="my-3"></v-divider>
           <v-card>
             <v-card-title primary-title>
               <div>
@@ -51,7 +49,8 @@
               <v-btn flat color="orange">Live Demo</v-btn>
             </v-card-actions>
           </v-card>
-          <v-divider class="my-3"></v-divider>
+        </v-flex>
+        <v-flex xs12 md6 offset-sm3>
           <v-card>
             <v-card-title primary-title>
               <div>
@@ -79,7 +78,6 @@
           </v-card>
         </v-flex>
       </v-layout>
-    </v-container>
   </v-app>
 </template>
 
