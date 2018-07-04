@@ -1,6 +1,22 @@
 <template>
   <v-app dark>
-    <v-toolbar app fixed color="transparent">
+    <v-navigation-drawer app temporary v-model="sideNav">
+      <v-list>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>Home</v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar app color="transparent">
+      <v-btn app color="transparent hidden-sm-and-up">
+        <v-icon
+        @click.stop="sideNav = !sideNav"
+        class="hidden-sm-and-up">fas fa-bars</v-icon>
+      </v-btn>
+      <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn flat router to="/">
           <v-icon class="pr-2">home</v-icon>Home
@@ -23,7 +39,7 @@
     <v-jumbotron
       :gradient="gradient"
       dark
-      style="height:100%">
+      style="height: 100%">
       <v-container fill-height>
         <v-layout align-center>
           <v-flex text-xs-center>
@@ -61,9 +77,7 @@
 export default {
   data: {
     return: {
-      menuItems: [
-        {}
-      ]
+      sideNav: false
     }
   }
 }

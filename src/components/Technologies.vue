@@ -24,33 +24,33 @@
       <v-flex xs12 sm6 offset-sm3>
         <h3 class="display-3 pb-3">My current skillset:</h3>
         <h5 class="display-2 pb-3 pt-5">Comfortable:</h5>
-          <v-btn color="success">
-            <v-icon class="pr-3">fab fa-html5</v-icon>HTML5
+          <v-btn color="success display-1">
+            <v-icon class="pr-3 display-1" >fab fa-html5</v-icon>HTML5
           </v-btn>
-          <v-btn color="success">
-            <v-icon class="pr-3">fab fa-css3</v-icon>CSS3
+          <v-btn color="success display-1">
+            <v-icon class="pr-3 display-1">fab fa-css3</v-icon>CSS3
           </v-btn>
-          <v-btn color="success">
-            <v-icon class="pr-3">fab fa-js-square</v-icon>JS
+          <v-btn color="success display-1">
+            <v-icon class="pr-3 display-1">fab fa-js-square</v-icon>JS
           </v-btn>
-          <v-btn color="success">
+          <v-btn color="success display-1">
           <v-icon class="pr-3">fas fa-bold</v-icon>Bootstrap
           </v-btn>
         <v-divider dark></v-divider>
         <h5 class="display-2 pb-3 pt-5">Learning:</h5>
-        <v-btn color="info">
-          <v-icon class="pr-3">fab fa-vuejs</v-icon>VueJS
+        <v-btn color="info display-1">
+          <v-icon class="pr-3 display-1">fab fa-vuejs</v-icon>VueJS
         </v-btn>
-        <v-btn color="info">
-          <v-icon class="pr-3">fab fa-node</v-icon>NodeJS
+        <v-btn color="info display-1">
+          <v-icon class="pr-3 display-1">fab fa-node</v-icon>NodeJS
         </v-btn>
         <v-divider dark></v-divider>
         <h5 class="display-2 pb-3 pt-5">Midly exposed to:</h5>
-          <v-btn color="black">
-            <v-icon class="pr-3">fab fa-cuttlefish</v-icon>C#
+          <v-btn color="black display-1">
+            <v-icon class="pr-3 display-1">fab fa-cuttlefish</v-icon>C#
           </v-btn>
-          <v-btn color="black">
-            <v-icon class="pr-3">fab fa-microsoft</v-icon>ASP.NET
+          <v-btn color="black display-1">
+            <v-icon class="pr-3 display-1">fab fa-microsoft</v-icon>ASP.NET
           </v-btn>
         <v-divider dark></v-divider>
       </v-flex>
@@ -65,5 +65,9 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
+  }
+
+  h3, h5 {
+    text-shadow: 3px 3px #000000;
+  }
 </style>

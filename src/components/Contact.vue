@@ -24,21 +24,21 @@
       <v-container fill-height>
         <v-layout align-center justify-center>
           <v-flex xs12 md6 offset-3>
-            <h3 class="display-1">
+            <v-btn class="display-1" hover>
               <v-icon class="pr-5">fas fa-envelope</v-icon> suhadolnik@protonmail.com
-            </h3>
+            </v-btn>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-1">
+            <v-btn  class="display-1">
               <v-icon class="pr-5">fab fa-github</v-icon> github.com/zasuh
-            </h3>
+            </v-btn>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-1">
+            <v-btn  class="display-1">
               <v-icon class="pr-5">fab fa-twitter</v-icon> twitter.com/zasuh_
-            </h3>
+            </v-btn>
             <v-divider class="my-3"></v-divider>
-            <h3 class="display-1">
+            <v-btn  class="display-1">
               <v-icon class="pr-5">fab fa-linkedin</v-icon> linkedin.com/in/zasuhadolnik/
-            </h3>
+            </v-btn>
           </v-flex>
         </v-layout>
       </v-container>
