@@ -1,7 +1,59 @@
 <template>
-  <v-app dark>
-    <v-toolbar app fixed color="transparent">
-      <v-toolbar-items>
+  <v-app>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      color="white"
+      mobile-break-point="10240"
+    >
+      <v-list dense>
+        <v-list-tile router to="/">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Projects">
+          <v-list-tile-action>
+            <v-icon>build</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Technologies">
+          <v-list-tile-action>
+            <v-icon>code</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Technologies</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Contact">
+          <v-list-tile-action>
+            <v-icon>perm_contact_calendar</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Contact</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>description</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Resume</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar app dark color="transparent">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
         <v-btn flat router to="/">
           <v-icon class="pr-2">home</v-icon>Home
         </v-btn>
@@ -45,12 +97,12 @@
           <v-icon class="pr-3 display-1">fab fa-node</v-icon>NodeJS
         </v-btn>
         <v-divider dark></v-divider>
-        <h5 class="display-2 pb-3 pt-5">Midly exposed to:</h5>
+        <h5 class="display-2 pb-3 pt-5">Mildly exposed to:</h5>
           <v-btn color="black display-1">
-            <v-icon class="pr-3 display-1">fab fa-cuttlefish</v-icon>C#
+            <v-icon class="pr-3 display-1" color="white">fab fa-cuttlefish</v-icon><div class="csharp">C#</div>
           </v-btn>
           <v-btn color="black display-1">
-            <v-icon class="pr-3 display-1">fab fa-microsoft</v-icon>ASP.NET
+            <v-icon class="pr-3 display-1" color="white">fab fa-microsoft</v-icon><div class="aspnet">ASP.NET</div>
           </v-btn>
         <v-divider dark></v-divider>
       </v-flex>
@@ -68,6 +120,20 @@
   }
 
   h3, h5 {
+    color: white;
     text-shadow: 3px 3px #000000;
   }
+
+  .csharp,
+  .aspnet {
+    color: white;
+  }
 </style>
+
+<script>
+  export default {
+  data: () => ({
+    drawer: null
+  })
+}
+</script>

@@ -1,7 +1,59 @@
 <template>
-  <v-app dark>
-    <v-toolbar app fixed color="transparent">
-      <v-toolbar-items>
+  <v-app>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      color="white"
+      mobile-break-point="10240"
+    >
+      <v-list dense>
+        <v-list-tile router to="/">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Projects">
+          <v-list-tile-action>
+            <v-icon>build</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Technologies">
+          <v-list-tile-action>
+            <v-icon>code</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Technologies</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Contact">
+          <v-list-tile-action>
+            <v-icon>perm_contact_calendar</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Contact</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>description</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Resume</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar app dark color="transparent">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
         <v-btn flat router to="/">
           <v-icon class="pr-2">home</v-icon>Home
         </v-btn>
@@ -28,7 +80,7 @@
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-1 display-3">Material Resume Clone</h3>
-                <div>One of the first material design clones I've made using HTML & CSS.</div>
+                <div class="desc">One of the first material design clones I've made using HTML & CSS.</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -41,7 +93,7 @@
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-1 display-3">Studio Ghibli API</h3>
-                <div>Experimentation with the Studio Ghibli movie API.</div>
+                <div class="desc">Experimentation with the Studio Ghibli movie API.</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -59,7 +111,7 @@
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-1 display-3">Comila Site Design Clone</h3>
-                <div>A site design clone made with Bootstrap.</div>
+                <div class="desc">A site design clone made with Bootstrap.</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -72,7 +124,7 @@
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-1 display-3">Vue Meetup Maker</h3>
-                <div>A meetup creator app built with Vue, Vuetify and Firebase.</div>
+                <div class="desc">A meetup creator app built with Vue, Vuetify and Firebase.</div>
               </div>
             </v-card-title>
             <v-card-actions>
@@ -88,27 +140,29 @@
 
 <style scoped>
   .application {
-  background-color: #00bfc5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 900'%3E%3Cpath fill='%23A0E2DB' d='M0 504 0 899 1600 899 1600 120z'/%3E%3Cpath fill='%23CBF2F3' d='M1600 567 1600 899 0 899 0 165z'/%3E%3Cpath fill='%23719D71' d='M0 680 0 899 1600 899 1600 300z'/%3E%3Cpath fill='%237EB67E' d='M1600 719 1600 899 0 899 0 353z'/%3E%3Cpath fill='%23004D66' d='M0 788 0 899 1600 899 1600 625z'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
+    background-color: #00bfc5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 900'%3E%3Cpath fill='%23A0E2DB' d='M0 504 0 899 1600 899 1600 120z'/%3E%3Cpath fill='%23CBF2F3' d='M1600 567 1600 899 0 899 0 165z'/%3E%3Cpath fill='%23719D71' d='M0 680 0 899 1600 899 1600 300z'/%3E%3Cpath fill='%237EB67E' d='M1600 719 1600 899 0 899 0 353z'/%3E%3Cpath fill='%23004D66' d='M0 788 0 899 1600 899 1600 625z'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
 
-h3 {
-  text-shadow: 1px 1px 1px #ccc;
-}
+  h3 {
+    color: white;
+    text-shadow: 1px 1px 1px #ccc;
+  }
+
+  .desc {
+    color: white;
+  }
 </style>
 
 <script>
-  export default {
-    name: 'Projects',
-    data: {
-      return: {
-        title: 'Projects'
-      }
-    }
-  }
+export default {
+  data: () => ({
+    drawer: null
+  })
+}
 </script>
 
 

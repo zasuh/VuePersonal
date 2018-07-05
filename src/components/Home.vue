@@ -1,23 +1,59 @@
 <template>
-  <v-app dark>
-    <v-navigation-drawer app temporary v-model="sideNav">
-      <v-list>
-        <v-list-tile>
+  <v-app>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      color="white"
+      mobile-break-point="10240"
+    >
+      <v-list dense>
+        <v-list-tile router to="/">
           <v-list-tile-action>
             <v-icon>home</v-icon>
           </v-list-tile-action>
-          <v-list-tile-content>Home</v-list-tile-content>
+          <v-list-tile-content>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Projects">
+          <v-list-tile-action>
+            <v-icon>build</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Technologies">
+          <v-list-tile-action>
+            <v-icon>code</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Technologies</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Contact">
+          <v-list-tile-action>
+            <v-icon>perm_contact_calendar</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Contact</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>description</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Resume</v-list-tile-title>
+          </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app color="transparent">
-      <v-btn app color="transparent hidden-sm-and-up">
-        <v-icon
-        @click.stop="sideNav = !sideNav"
-        class="hidden-sm-and-up">fas fa-bars</v-icon>
-      </v-btn>
+    <v-toolbar app dark color="transparent">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
       <v-spacer></v-spacer>
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-xs-only">
         <v-btn flat router to="/">
           <v-icon class="pr-2">home</v-icon>Home
         </v-btn>
@@ -75,10 +111,8 @@
 
 <script>
 export default {
-  data: {
-    return: {
-      sideNav: false
-    }
-  }
+  data: () => ({
+    drawer: null
+  })
 }
 </script>

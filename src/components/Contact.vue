@@ -1,7 +1,59 @@
 <template>
-  <v-app dark>
-    <v-toolbar app fixed color="transparent">
-      <v-toolbar-items>
+  <v-app>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      color="white"
+      mobile-break-point="10240"
+    >
+      <v-list dense>
+        <v-list-tile router to="/">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Home</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Projects">
+          <v-list-tile-action>
+            <v-icon>build</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Technologies">
+          <v-list-tile-action>
+            <v-icon>code</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Technologies</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile router to="/Contact">
+          <v-list-tile-action>
+            <v-icon>perm_contact_calendar</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Contact</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>description</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Resume</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+    <v-toolbar app dark color="transparent">
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
         <v-btn flat router to="/">
           <v-icon class="pr-2">home</v-icon>Home
         </v-btn>
@@ -20,7 +72,7 @@
       </v-toolbar-items>
     </v-toolbar>
 
-    <v-jumbotron style="height:100%">
+    <v-jumbotron style="height:100%" dark>
       <v-container fill-height>
         <v-layout align-center justify-center>
           <v-flex xs12 md6 offset-3>
@@ -28,15 +80,15 @@
               <v-icon class="pr-5">fas fa-envelope</v-icon> suhadolnik@protonmail.com
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn  class="display-1">
+            <v-btn class="display-1" to="https://github.com/zasuh">
               <v-icon class="pr-5">fab fa-github</v-icon> github.com/zasuh
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn  class="display-1">
+            <v-btn class="display-1" to="https://twitter.com/zasuh_">
               <v-icon class="pr-5">fab fa-twitter</v-icon> twitter.com/zasuh_
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn  class="display-1">
+            <v-btn class="display-1" to="https://www.linkedin.com/in/zasuhadolnik/">
               <v-icon class="pr-5">fab fa-linkedin</v-icon> linkedin.com/in/zasuhadolnik/
             </v-btn>
           </v-flex>
@@ -56,3 +108,10 @@
 }
 </style>
 
+<script>
+  export default {
+  data: () => ({
+    drawer: null
+  })
+}
+</script>
