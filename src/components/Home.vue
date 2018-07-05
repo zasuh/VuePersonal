@@ -40,7 +40,7 @@
             <v-list-tile-title>Contact</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile>
+        <v-list-tile href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-list-tile-action>
             <v-icon>description</v-icon>
           </v-list-tile-action>
@@ -66,7 +66,7 @@
         <v-btn flat router to="/Contact">
           <v-icon class="pr-2">perm_contact_calendar</v-icon>Contact
         </v-btn>
-        <v-btn flat>
+        <v-btn flat href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-icon class="pr-2">description</v-icon>Resume
         </v-btn>
       </v-toolbar-items>

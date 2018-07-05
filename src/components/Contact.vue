@@ -40,7 +40,7 @@
             <v-list-tile-title>Contact</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile>
+        <v-list-tile href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-list-tile-action>
             <v-icon>description</v-icon>
           </v-list-tile-action>
@@ -66,7 +66,7 @@
         <v-btn flat router to="/Contact">
           <v-icon class="pr-2">perm_contact_calendar</v-icon>Contact
         </v-btn>
-        <v-btn flat>
+        <v-btn flat href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-icon class="pr-2">description</v-icon>Resume
         </v-btn>
       </v-toolbar-items>
@@ -80,15 +80,15 @@
               <v-icon class="pr-5">fas fa-envelope</v-icon> suhadolnik@protonmail.com
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn class="display-1" to="https://github.com/zasuh">
+            <v-btn class="display-1" href="https://github.com/zasuh">
               <v-icon class="pr-5">fab fa-github</v-icon> github.com/zasuh
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn class="display-1" to="https://twitter.com/zasuh_">
+            <v-btn class="display-1" href="https://twitter.com/zasuh_">
               <v-icon class="pr-5">fab fa-twitter</v-icon> twitter.com/zasuh_
             </v-btn>
             <v-divider class="my-3"></v-divider>
-            <v-btn class="display-1" to="https://www.linkedin.com/in/zasuhadolnik/">
+            <v-btn class="display-1" href="https://www.linkedin.com/in/zasuhadolnik/">
               <v-icon class="pr-5">fab fa-linkedin</v-icon> linkedin.com/in/zasuhadolnik/
             </v-btn>
           </v-flex>

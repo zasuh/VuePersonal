@@ -40,7 +40,7 @@
             <v-list-tile-title>Contact</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile>
+        <v-list-tile href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-list-tile-action>
             <v-icon>description</v-icon>
           </v-list-tile-action>
@@ -66,7 +66,7 @@
         <v-btn flat router to="/Contact">
           <v-icon class="pr-2">perm_contact_calendar</v-icon>Contact
         </v-btn>
-        <v-btn flat>
+        <v-btn flat href="https://drive.google.com/open?id=1AaQNrUboryDTy14tRLcVmaYVdCAJ64Ze">
           <v-icon class="pr-2">description</v-icon>Resume
         </v-btn>
       </v-toolbar-items>
@@ -84,8 +84,8 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn flat color="orange">GitHub Repo</v-btn>
-              <v-btn flat color="orange">Live Demo</v-btn>
+              <v-btn flat color="orange" href="https://github.com/zasuh/Resume">GitHub Repo</v-btn>
+              <v-btn flat color="orange" href="http://resume-material-clone.surge.sh/">Live Demo</v-btn>
             </v-card-actions>
           </v-card>
           <v-divider class="my-3"></v-divider>
@@ -97,8 +97,8 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn flat color="orange">GitHub Repo</v-btn>
-              <v-btn flat color="orange">Live Demo</v-btn>
+              <v-btn flat color="orange" href="https://github.com/zasuh/GhibliAPI">GitHub Repo</v-btn>
+              <v-btn flat color="orange" href="http://ghibliapi.surge.sh/">Live Demo</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -115,8 +115,8 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn flat color="orange">GitHub Repo</v-btn>
-              <v-btn flat color="orange">Live Demo</v-btn>
+              <v-btn flat color="orange" href="https://github.com/zasuh/Comila-Design-Clone">GitHub Repo</v-btn>
+              <v-btn flat color="orange" href="http://comila-clone.surge.sh/">Live Demo</v-btn>
             </v-card-actions>
           </v-card>
           <v-divider class="my-3"></v-divider>
@@ -128,8 +128,7 @@
               </div>
             </v-card-title>
             <v-card-actions>
-              <v-btn flat color="orange">GitHub Repo</v-btn>
-              <v-btn flat color="orange">Live Demo</v-btn>
+              <v-btn flat color="orange" href="https://github.com/zasuh/VueMeetup">GitHub Repo</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
